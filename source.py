@@ -12,9 +12,10 @@ c, addr = s.accept()     # Establish connection with client.
 print ('Got connection from', addr)
 idx = 0
 while True:
+    print(" ".join(test_data.iloc[idx].values.astype("str")))
     c.send(bytes(" ".join(test_data.iloc[idx].values.astype("str")),encoding='utf8'))
     idx+=1
     if idx == len(test_data):
         idx = 0
     print("SENT")
-    time.sleep(5)
+    time.sleep(10)

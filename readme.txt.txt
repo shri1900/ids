@@ -5,6 +5,6 @@ Files :
 
 direction : 
 	1. Run python source.py
-	2. run python server.py
+	2. run python app.py
 	3. Make sure to run them on different teminals
 	4. files currentlt run on local host it can be modified for different source and host machines
